@@ -74,7 +74,7 @@
 }
 
 .card {
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -82,7 +82,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 80%;
 }
 
 .card:hover,
@@ -94,7 +94,7 @@
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .card p {
@@ -129,5 +129,11 @@
 }
 
 .textWrap {
-  margin: 50px 100px;
+  margin: 20px 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .textWrap {
+    margin: 20px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
