@@ -1,9 +1,16 @@
 import styles from "../styles/Home.module.css"
 import LogoApp from "../components/logoApp"
+import Head from "next/head"
 
 export default function Privacy() {
   return (
     <div className={styles.textWrap}>
+      <Head>
+        <title>Tuntun | Privacy Policy</title>
+        <meta name="description" content="Aplikasi perkembangan anak" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <LogoApp width={200} />
       <h1>Privacy Policy</h1>
       <p>Last updated: December 07, 2022</p>

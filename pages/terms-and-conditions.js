@@ -1,9 +1,16 @@
 import LogoApp from "../components/logoApp"
 import styles from "../styles/Home.module.css"
+import Head from "next/head"
 
 export default function Terms() {
   return (
     <div className={styles.textWrap}>
+      <Head>
+        <title>Tuntun | Terms and Condition</title>
+        <meta name="description" content="Aplikasi perkembangan anak" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <LogoApp width={200} />
       <h1 id="terms-condition">Terms and Conditions</h1>
       <p>Last updated: December 07, 2022</p>
