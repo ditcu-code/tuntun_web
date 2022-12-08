@@ -20,7 +20,6 @@ export default function Home() {
             <h2>Terms & Condition &rarr;</h2>
             {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </Link>
-
           <Link href="/privacy-policy" className={styles.card}>
             <h2>Privacy Policy &rarr;</h2>
             {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
@@ -29,4 +28,8 @@ export default function Home() {
       </main>
     </div>
   )
+}
+
+function Code({ children }) {
+  return <code className={styles.inlineCode}>{children}</code>
 }
