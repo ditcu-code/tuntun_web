@@ -2,6 +2,8 @@ import Head from "next/head"
 import styles from "../styles/Home.module.css"
 import Link from "next/link"
 import LogoApp from "../components/logoApp"
+import Image from "next/image"
+import appstore from "../resources/appstoreLabel.png"
 
 export default function Home() {
   return (
@@ -14,14 +16,22 @@ export default function Home() {
 
       <main className={styles.main}>
         <LogoApp width={"300"} />
+        <Link href="/appstore">
+          <Image
+            className={styles.appstoreLabel}
+            src={appstore}
+            alt={"appstore-label"}
+          />
+        </Link>
 
         <div className={styles.grid}>
           <Link href="/terms-and-conditions" className={styles.card}>
-            <h2>Terms & Condition &rarr;</h2>
+            <p>Terms & Condition</p>
             {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </Link>
+
           <Link href="/privacy-policy" className={styles.card}>
-            <h2>Privacy Policy &rarr;</h2>
+            <p>Privacy Policy</p>
             {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
           </Link>
         </div>
