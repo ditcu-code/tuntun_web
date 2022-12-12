@@ -1,5 +1,6 @@
 import React from "react"
 import Script from "next/script"
+import { GA_MEASUREMENT_ID } from "../lib/gtag"
 
 export default function Analytic() {
   return (
