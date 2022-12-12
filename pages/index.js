@@ -7,7 +7,7 @@ import appstore from "../resources/appstoreLabel.png"
 import { event } from "../lib/gtag"
 
 export default function Home() {
-  function handleVisit(actionName) {
+  function handleVisit({ actionName }) {
     event({
       action: actionName,
       category: "Links",
@@ -26,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <LogoApp width={"300"} />
-        <Link href="/appstore" onClick={handleVisit("home_to_appstore")}>
+        <Link href="/appstore" onClick={() => handleVisit("home_to_appstore")}>
           <Image
             className={styles.appstoreLabel}
             src={appstore}
@@ -38,7 +38,7 @@ export default function Home() {
           <Link
             href="/terms-and-conditions"
             className={styles.card}
-            onClick={handleVisit("home_to_terms")}
+            onClick={() => handleVisit("home_to_terms")}
           >
             <p>Terms & Condition</p>
           </Link>
@@ -46,7 +46,7 @@ export default function Home() {
           <Link
             href="/privacy-policy"
             className={styles.card}
-            onClick={handleVisit("home_to_privacy")}
+            onClick={() => handleVisit("home_to_privacy")}
           >
             <p>Privacy Policy</p>
           </Link>
