@@ -27,12 +27,10 @@ export default function Home() {
         <div className={styles.grid}>
           <Link href="/terms-and-conditions" className={styles.card}>
             <p>Terms & Condition</p>
-            {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </Link>
 
           <Link href="/privacy-policy" className={styles.card}>
             <p>Privacy Policy</p>
-            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
           </Link>
         </div>
       </main>
