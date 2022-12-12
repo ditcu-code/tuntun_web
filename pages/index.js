@@ -12,6 +12,7 @@ export default function Home() {
       action: "AppStore",
       category: "Links",
       label: "AppStore logo clicked!",
+      value: 1,
     })
   }
 
@@ -25,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <LogoApp width={"300"} />
-        <Link href="/appstore" onClick={handleVisitAppStore()}>
+        <Link href="/appstore" onClick={handleVisitAppStore}>
           <Image
             className={styles.appstoreLabel}
             src={appstore}
