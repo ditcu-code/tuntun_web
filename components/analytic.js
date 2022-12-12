@@ -4,6 +4,7 @@ import { GA_MEASUREMENT_ID } from "../lib/gtag"
 
 export default function Analytic() {
   console.log("ga code", GA_MEASUREMENT_ID)
+  console.log("ga code2", process.env.GA_MEASUREMENT_ID)
   return (
     <>
         

@@ -13,6 +13,11 @@ const nextConfig = {
         destination: "https://testflight.apple.com/join/Nvyiuu27",
         permanent: false,
       },
+      {
+        source: "/appstore",
+        destination: "https://apps.apple.com/app/id6444361388",
+        permanent: false,
+      },
     ]
   },
 }
