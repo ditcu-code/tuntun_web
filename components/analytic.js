@@ -4,7 +4,6 @@ import Script from "next/script"
 export default function Analytic() {
   return (
     <>
-        
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-0PD8EKWHLQ`}

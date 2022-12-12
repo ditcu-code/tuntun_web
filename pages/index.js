@@ -4,8 +4,17 @@ import Link from "next/link"
 import LogoApp from "../components/logoApp"
 import Image from "next/image"
 import appstore from "../resources/appstoreLabel.png"
+import { event } from "../lib/gtag"
 
 export default function Home() {
+  function handleVisitAppStore() {
+    event({
+      action: "AppStore",
+      category: "Links",
+      label: "AppStore logo clicked!",
+    })
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +25,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <LogoApp width={"300"} />
-        <Link href="/appstore">
+        <Link href="/appstore" onClick={handleVisitAppStore()}>
           <Image
             className={styles.appstoreLabel}
             src={appstore}
