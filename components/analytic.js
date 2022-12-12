@@ -1,16 +1,13 @@
 import React from "react"
 import Script from "next/script"
-import { GA_MEASUREMENT_ID } from "../lib/gtag"
 
 export default function Analytic() {
-  console.log("ga code", GA_MEASUREMENT_ID)
-  console.log("ga code2", process.env.GA_MEASUREMENT_ID)
   return (
     <>
         
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-0PD8EKWHLQ`}
       />
       <Script
         id="google-analytics"
@@ -20,7 +17,7 @@ export default function Analytic() {
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
-     gtag('config', '${GA_MEASUREMENT_ID}', {
+     gtag('config', 'G-0PD8EKWHLQ', {
       page_path: window.location.pathname,
      });
     `,
