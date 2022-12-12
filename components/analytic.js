@@ -3,6 +3,7 @@ import Script from "next/script"
 import { GA_MEASUREMENT_ID } from "../lib/gtag"
 
 export default function Analytic() {
+  console.log("ga code", GA_MEASUREMENT_ID)
   return (
     <>
         
@@ -18,7 +19,7 @@ export default function Analytic() {
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
-     gtag('config', '${GA_MEASUREMENT_ID}', {
+     gtag('config', ${GA_MEASUREMENT_ID}, {
       page_path: window.location.pathname,
      });
     `,
