@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Script from "next/script"
 
 export default function Analytic() {

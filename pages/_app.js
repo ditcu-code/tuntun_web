@@ -1,7 +1,7 @@
 import "../styles/globals.css"
 import { useRouter } from "next/router"
 import { useEffect } from "react"
-import * as gtag from "../lib/gtag"
+import * as gtag from "../lib/gtag.js"
 import Analytic from "../components/analytic"
 
 function MyApp({ Component, pageProps }) {
