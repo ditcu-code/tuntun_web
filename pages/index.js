@@ -7,7 +7,7 @@ import appstore from "../resources/appstoreLabel.png"
 import { event } from "../lib/gtag"
 
 export default function Home() {
-  function handleVisit({ actionName }) {
+  function handleVisit(actionName) {
     event({
       action: actionName,
       category: "Links",
